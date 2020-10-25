@@ -22,10 +22,17 @@ export function createContainer<Value, State = void>(
     return value;
   }
 
-  function useContainer(): Value {
+  function useContainer(
+    force: boolean = false,
+    props?: ContainerProviderProps<State>
+  ): Value {
     const value = inject(providerSymbol);
     if (!value) {
-      throw new Error('Container must be used in provided Component.');
+      if (force) {
+        return provide(props);
+      } else {
+        throw new Error('Container must be used in provided Component.');
+      }
     }
     return value;
   }

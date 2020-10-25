@@ -1,13 +1,13 @@
 {
   "name": "composition-store",
   "version": "0.1.0",
-  "description": "A tiny state management library for Vue Composition API.",
-  "repository": "ssh://git@github.com/resessh/vue-unstated.git",
-  "homepage": "https://github.com/resessh/vue-unstated#readme",
+  "description": "A tiny state management library for Vue Composition API. This library is forked from vue-unstated.",
+  "repository": "ssh://git@github.com/tk-shiraishi/vue-unstated.git",
+  "homepage": "https://github.com/tk-shiraishi/vue-unstated#readme",
   "bugs": {
-    "url": "https://github.com/resessh/vue-unstated/issues"
+    "url": "https://github.com/tk-shiraishi/vue-unstated/issues"
   },
-  "author": "resessh <info@resessh.net>",
+  "author": "tk-shiraishi",
   "license": "MIT",
   "keywords": [
     "vue",
@@ -16,9 +16,9 @@
     "composition-api",
     "function-api"
   ],
-  "main": "lib/vue-unstated.js",
-  "module": "lib/vue-unstated.esm.js",
-  "unpkg": "lib/vue-unstated.umd.js",
+  "main": "lib/composition-sore.js",
+  "module": "lib/composition-store.esm.js",
+  "unpkg": "lib/composition-store.umd.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib"
